@@ -1,0 +1,23 @@
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #929292;
+}
+
+.btn-area {
+  margin-bottom: 52px;
+  text-align: center;
+  .btn {
+    font-size: 14px;
+    padding: 10px 35px;
+    &:not(:hover) {
+      color: #fcc777;
+    }
+  }
+}
+
+.copyright {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}

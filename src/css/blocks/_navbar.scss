@@ -1,0 +1,19 @@
+.navbar {
+  padding-top: 13px;
+  &-menu {
+    font-size: 12px;
+    a {
+      color: #000;
+      padding-bottom: 15px;
+      display: inline-block;
+      border-bottom: 2px solid transparent;
+    }
+    .active a, a:hover {
+      border-bottom-color: #ffa679;
+      text-decoration: none;
+    }
+  }
+  &-toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+button, textarea, input {
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: all .3s ease;
+  &:hover {
+    text-decoration: none;
+  }
+  &-transparent {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 9px 54px;
+    color: #fff;
+    border: 3px solid #f0a67f;
+    display: inline-block;
+    &:hover {
+      color: #f0a67f;
+      border: 3px solid #fff;
+    }
+  }
+  &-rectangle {
+    padding: 21px 33px;
+    background-color: #f96059;
+    color: #ffffff;
+    font-size: 28px;
+    display: inline-block;
+    &:hover {
+      color: #f96059;
+      background-color: #ffffff;
+    }
+  }
+}

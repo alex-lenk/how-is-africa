@@ -1,0 +1,40 @@
+.social {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ebe6e0;
+  li {
+    display: inline-block;
+    margin: 0 25px;
+    &:first-child {
+      margin: 0;
+      img {
+        width: 75px;
+        left: -9px;
+        top: -18px;
+      }
+    }
+    &:last-child {
+      margin: 0;
+      width: 37px;
+      left: 12px;
+    }
+  }
+  a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #ffc872;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      border-color: #ffa679;
+    }
+  }
+  img {
+    position: absolute;
+    width: 35px;
+    left: 11px;
+    top: 12px;
+    max-width: none;
+  }
+}

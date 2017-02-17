@@ -1,0 +1,48 @@
+@import 'lib/breakpoint';
+@import 'lib/breakpoint-slicer';
+
+@import "common/mixin";
+
+/* fonts */
+@import "common/fonts";
+
+/* common */
+@import "common/common";
+
+/* btn */
+@import "common/btn";
+
+/* top-panel */
+@import "blocks/top-panel";
+
+/* navbar */
+@import "blocks/navbar";
+
+/* header */
+@import "blocks/header";
+
+/* content */
+@import "blocks/content";
+
+/* footer */
+@import "blocks/footer";
+
+/* social */
+@import "blocks/social";
+
+/* footer-nav */
+@import "blocks/footer-nav";
+
+.big-title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  display: inline-block;
+  &::after {
+    width: 35%;
+    height: 3px;
+    margin-top: 23px;
+    background-color: #f69962;
+    display: block;
+    content: '';
+  }
+}

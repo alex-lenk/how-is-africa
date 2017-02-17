@@ -1,0 +1,148 @@
+@import 'lib/breakpoint';
+@import 'lib/breakpoint-slicer';
+
+@include from('m') {
+  .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-top .title {
+    line-height: 64px;
+    font-size: 54px;
+  }
+
+  .header-bottom {
+    font-size: 24px;
+    line-height: 30px;
+    &:after, &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 150rem;
+      top: 0;
+      background-color: inherit;
+    }
+    &::before {
+      left: 100%;
+    }
+    &::after {
+      right: 100%;
+    }
+  }
+
+  .content-home-list {
+    .item {
+      &:not(.fifth):not(.eighth) {
+        width: 25%;
+      }
+      &:not(.fourth) {
+        min-height: 210px;
+      }
+    }
+    .fifth {
+      width: 50%;
+      font-size: 26px;
+    }
+  }
+}
+
+@include from('l') {
+  .navbar {
+    padding-top: 55px;
+  }
+}
+
+@include between('s', 'm') {
+  .logo {
+    text-align: center;
+  }
+}
+
+@include to('m') {
+  .header-what-we-do {
+    .text-nowrap {
+      white-space: normal;
+    }
+  }
+}
+
+@include to('s') {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 0 0;
+    &-toggle {
+      padding: 0;
+      margin: 0 0 15px 15px;
+      display: block;
+      .text {
+        @include to('xs') {
+          display: none;
+        }
+      }
+      &::before {
+        content: '';
+        width: 28px;
+        height: 2px;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #f0a67f;
+        box-shadow: 0 7px 0 0 #f0a67f, 0 -7px 0 0 #f0a67f;
+      }
+    }
+
+    &-menu {
+      background-color: #fff;
+      color: #fff;
+      position: relative;
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      transform: translateX(-103%);
+      will-change: transform;
+      z-index: 160;
+      pointer-events: auto;
+      transition: all 130ms ease-in;
+      a {
+        padding: 15px;
+        border-width: 0;
+      }
+      &__active {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .content-home-list {
+    #container {
+      height: auto !important;
+    }
+    .item {
+      position: relative !important;
+      top: 0 !important;
+      display: inline-block;
+    }
+  }
+
+  .footer-nav-memu {
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      margin: 0 10px 15px;
+    }
+    a {
+      padding-bottom: 0;
+      border-width: 0;
+    }
+  }
+}
+
+@include to('xs') {
+  .logo {
+    text-align: right;
+  }
+}
