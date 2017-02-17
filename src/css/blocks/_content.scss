@@ -75,7 +75,7 @@
   &-digital {
     padding-top: 125px;
     padding-bottom: 90px;
-    background: url(../img/ex-img.jpg) no-repeat center top;
+    background: url(../img/example/ex-img.jpg) no-repeat center top;
     .intro-text {
       width: 500px;
       min-height: 395px;
@@ -120,32 +120,32 @@
         &-story {
           &::before {
             width: 117px;
-            background: url(../img/story.png) no-repeat center;
+            background: url(../img/icons/story.png) no-repeat center;
           }
         }
         &-content {
           &::before {
             width: 117px;
-            background: url(../img/content.png) no-repeat center;
+            background: url(../img/icons/content.png) no-repeat center;
           }
         }
         &-platform {
           &::before {
             width: 116px;
-            background: url(../img/platform.png) no-repeat center;
+            background: url(../img/icons/platform.png) no-repeat center;
           }
         }
         &-tool {
           &::before {
             width: 153px;
             height: 124px;
-            background: url(../img/tools.png) no-repeat center;
+            background: url(../img/icons/tools.png) no-repeat center;
           }
         }
         &-voice {
           &::before {
             width: 105px;
-            background: url(../img/voice.png) no-repeat center;
+            background: url(../img/icons/voice.png) no-repeat center;
           }
         }
       }
