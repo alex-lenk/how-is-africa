@@ -1,6 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
+vcs.xml
 bower_components
 build
 node_modules
 sources
+

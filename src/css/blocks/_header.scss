@@ -3,13 +3,15 @@
   position: relative;
   z-index: 2;
   &-title {
-    padding: 9px 54px;
+    padding: 9px 44px;
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    border: 3px solid #f0a67f;
+    border: 3px solid transparent;
     display: inline-block;
     text-transform: uppercase;
+    border-image: linear-gradient(to right, #ffa879 0%, #ffc373 100%);
+    border-image-slice: 1;
   }
 
   &-top {

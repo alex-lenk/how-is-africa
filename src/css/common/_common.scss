@@ -80,3 +80,21 @@ h1 {
     list-style: none;
   }
 }
+
+.big-title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  display: inline-block;
+  &::after {
+    width: 35%;
+    height: 3px;
+    margin-top: 23px;
+    background-color: #f69962;
+    display: block;
+    content: '';
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}

@@ -1,0 +1,119 @@
+.contact-us {
+  padding-top: 50px;
+  padding-bottom: 95px;
+  background: rgb(84, 232, 245);
+  background: -moz-linear-gradient(-45deg, rgba(84, 232, 245, 1) 0%, rgba(0, 168, 181, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(84, 232, 245, 1) 0%, rgba(0, 168, 181, 1) 100%);
+  background: linear-gradient(135deg, rgba(84, 232, 245, 1) 0%, rgba(0, 168, 181, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54e8f5', endColorstr='#00a8b5', GradientType=1);
+  position: relative;
+
+  &::before {
+    width: 100%;
+    height: 95%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    content: '';
+    position: absolute;
+    background: url(../img/bg-contacts.png) right top;
+  }
+
+  .header-title {
+    margin-bottom: 25px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .placeholder-list {
+    margin-bottom: 40px;
+    li {
+      width: 42%;
+      margin-bottom: 7px;
+      display: inline-block;
+      vertical-align: top;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+
+  .big-title {
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  &-form {
+    padding: 50px 35px;
+    background-color: #fff;
+    textarea {
+      resize: none;
+    }
+    .left-area {
+      height: 296px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .send-form {
+      padding: 12px 10px 10px 20px;
+      background-color: #ff7a6e;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      &::after {
+        width: 37px;
+        height: 35px;
+        margin-left: 18px;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/icons/send.svg) no-repeat 100% center / contain;
+      }
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .icon-fb, .icon-ig {
+      width: 43px;
+      height: 42px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+      position: relative;
+      &::before {
+        content: '';
+        width: 45px;
+        height: 45px;
+        position: absolute;
+      }
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .icon-fb {
+      margin: 0 32px;
+      width: 43px;
+      height: 42px;
+      border: 2px solid #bcbdc0;
+      border-radius: 10px;
+      &::before {
+        width: 65px;
+        height: 65px;
+        top: -21px;
+        left: -8px;
+        background: url(../img/icons/facebook.svg) no-repeat center;
+      }
+    }
+    .icon-ig {
+      &::before {
+        width: 87px;
+        height: 49px;
+        top: -4px;
+        left: -22px;
+        background: url(../img/icons/instagramm.svg) no-repeat center / contain;
+      }
+    }
+  }
+}
