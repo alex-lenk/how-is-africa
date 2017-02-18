@@ -23,6 +23,9 @@ a {
   &:focus {
     color: #ee8467;
   }
+  &:focus {
+    outline: none;
+  }
   &[href^=tel] {
     color: #ffffff
   }
