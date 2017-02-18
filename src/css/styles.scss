@@ -43,3 +43,33 @@
 @import "blocks/blog";
 
 @import "blocks/pagination";
+
+@import "lib/jquery.formstyler";
+
+@import "blocks/sidebar";
+
+.icon-prev, .icon-next {
+  &:before {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    content: '';
+  }
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.icon-prev {
+  &::before {
+    background: url(../img/icons/prev.svg) no-repeat center;
+    background-size: contain;
+  }
+}
+
+.icon-next {
+  &::before {
+    background: url(../img/icons/next.svg) no-repeat center;
+    background-size: contain;
+  }
+}

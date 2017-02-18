@@ -23,3 +23,11 @@ function checkAndRepaint() {
         $container.masonry('destroy'); // destroy
     }
 }
+
+(function ($) {
+    $(function () {
+
+        $('.blog-filter-select').styler();
+
+    });
+})(jQuery);

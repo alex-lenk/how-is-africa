@@ -1,0 +1,22 @@
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+  }
+  a, .current {
+    padding: 10px 11px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  a:not(:hover) {
+    color: #9c9e9f;
+  }
+  .current {
+    color: #ee8467;
+  }
+}
