@@ -1,48 +1,46 @@
 .content {
-  padding-bottom: 125px;
   padding-top: 85px;
   &-home {
     &-list {
       overflow: hidden;
       text-align: center;
-      .item {
-        color: #fff;
+      li {
+        color: #ffeee6;
         position: relative;
         line-height: 1.4;
+        float: right;
         overflow: hidden;
         font-size: 18px;
         font-weight: 600;
         text-align: left;
+        &:not(.fourth) {
+          height: 210px;
+        }
+        &:not(.fifth):not(.eighth) {
+          @include from('l') {
+            width: calc(100% / 4);
+          }
+          @include to('m') {
+            width: calc(100% / 3);
+          }
+        }
         &:not(.second):not(.fourth):not(.sixth):not(.eighth) {
           padding: 10px;
         }
       }
-      /*      li {
-              color: #fff;
-              position: relative;
-              line-height: 1.4;
-              float: right;
-              overflow: hidden;
-              font-size: 18px;
-              font-weight: 600;
-              &:not(.fourth) {
-                height: 210px;
-              }
-              &:not(.fifth):not(.eighth) {
-                width: 232.5px;
-              }
-              &:not(.second):not(.fourth):not(.sixth):not(.eighth) {
-                padding: 10px;
-              }
-            }*/
       .first {
         background-color: #f59463;
+      }
+      .second {
+        background: url(../img/example/img-2x.jpg) no-repeat center / cover;
       }
       .third {
         background-color: #fa6159;
       }
       .fourth {
         height: 420px;
+        color: #fff;
+        background: url(../img/example/img-2-2x.jpg) no-repeat center / cover;
         span {
           width: 100%;
           height: 100%;
@@ -55,15 +53,31 @@
         }
       }
       .fifth {
-        //float: left;
+        float: left;
         padding: 10px;
         background-color: #de944f;
+        font-size: 27px;
+        @include from('l') {
+          width: calc(100% / 2);
+        }
+        @include to('m') {
+          width: 66.6666%;
+        }
+      }
+      .sixth {
+        background: url(../img/example/img-3-2x.jpg) no-repeat center / cover;
       }
       .seventh {
         background-color: #f0b95c;
       }
       .eighth {
-        width: 465px;
+        background: url(../img/example/img-4-2x.jpg) no-repeat center / cover;
+        @include from('l') {
+          width: calc(100% / 2);
+        }
+        @include to('m') {
+          width: 66.6666%;
+        }
       }
       .ninth {
         background-color: #de6b4f;
@@ -74,11 +88,10 @@
   /* .content-digital */
   &-digital {
     padding-top: 125px;
-    padding-bottom: 90px;
     background: url(../img/example/ex-img.jpg) no-repeat center top;
     .intro-text {
-      width: 500px;
-      min-height: 395px;
+      max-width: 500px;
+      width: 100%;
       font-size: 30px;
       color: #fff;
       font-weight: 300;

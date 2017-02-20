@@ -12,9 +12,6 @@ button {
   cursor: pointer;
   line-height: 1;
   transition: all .3s ease;
-  &:hover {
-    text-decoration: none;
-  }
   &-transparent {
     font-size: 16px;
     font-weight: 700;

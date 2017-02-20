@@ -1,7 +1,7 @@
 .navbar {
-  padding-top: 13px;
+  padding-top: 35px;
   &-menu {
-    font-size: 12px;
+    font-size: 10.67px;
     a {
       color: #000;
       padding-bottom: 15px;
@@ -10,7 +10,6 @@
     }
     .active a, a:hover {
       border-bottom-color: #ffa679;
-      text-decoration: none;
     }
   }
   &-toggle {

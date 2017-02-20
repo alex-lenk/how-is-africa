@@ -1,12 +1,8 @@
 .blog-inner {
-  padding-top: 25px;
-  .media-block {
-    padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  .important-text {
-    padding: 25px 120px;
+  padding-top: 35px;
+  blockquote {
+    padding: 15px 60px;
+    margin-bottom: 0;
     font-size: 28px;
     font-weight: 300;
     line-height: 1.3;

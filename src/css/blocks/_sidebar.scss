@@ -1,43 +1,4 @@
 .sidebar {
-  &-search {
-    margin-bottom: 35px;
-    position: relative;
-    .form-control {
-      height: 48px;
-      border-color: #b9babc;
-      outline: 0;
-      padding-left: 45px;
-      &::-webkit-input-placeholder {
-        font-size: 14px;
-        color: #989898;
-        font-weight: 400;
-      }
-      &::-moz-placeholder {
-        font-size: 14px;
-        color: #989898;
-        font-weight: 400;
-      }
-      &:-ms-input-placeholder {
-        font-size: 14px;
-        color: #989898;
-        font-weight: 400;
-      }
-    }
-    .button-search {
-      position: absolute;
-      top: 9px;
-      left: 6px;
-      padding: 0;
-      &::before {
-        width: 32px;
-        height: 32px;
-        display: block;
-        content: '';
-        background: url(../img/icons/search.svg) no-repeat center / contain;
-      }
-    }
-  }
-
   &-contribute {
     height: 400px;
     display: flex;
@@ -58,6 +19,11 @@
       font-weight: 700;
       color: #545454;
       text-transform: uppercase;
+      &:hover {
+        color: #ffffff;
+        background-color: #dd6b4f;
+        //border-color: #dd6b4f;
+      }
     }
   }
 

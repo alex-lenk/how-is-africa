@@ -31,25 +31,89 @@
     }
   }
 
-  .content-home-list {
-    .item {
-      &:not(.fifth):not(.eighth) {
-        width: 25%;
-      }
-      &:not(.fourth) {
-        min-height: 210px;
-      }
-    }
-    .fifth {
-      width: 50%;
-      font-size: 26px;
-    }
+  .content-home {
+    padding-bottom: 75px;
   }
 }
 
 @include from('l') {
+  .top-panel {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
   .navbar {
     padding-top: 55px;
+    &-menu {
+      font-size: 12px;
+    }
+  }
+
+  .header-home .header-bottom {
+    padding-top: 48px;
+    padding-bottom: 61px;
+  }
+
+  .blog-inner {
+    padding-top: 30px;
+    blockquote {
+      padding: 30px 120px;
+    }
+  }
+  .header-top {
+    padding-top: 77px;
+    .intro-text {
+      padding-top: 25px;
+    }
+  }
+
+  .contact-us-form {
+    .left-area {
+      height: 296px;
+    }
+    .icon-fb {
+      margin: 0 32px;
+    }
+  }
+  .placeholder-list li {
+    width: 42%;
+  }
+  .header--digital-storytelling {
+    .header-top {
+      padding-top: 29px;
+    }
+    .text {
+      margin-top: 37px;
+      margin-bottom: 74px;
+      border-radius: 40px;
+      padding: 25px 26px 34px 29px;
+      &::before {
+        border-top: 26px solid #fff4e4;
+        bottom: -26px;
+        left: 100px;
+      }
+    }
+    .header-bottom {
+      padding-top: 25px;
+      padding-bottom: 33px;
+      &-text {
+        &::after {
+          left: 113px;
+        }
+        &::before {
+          left: 109px;
+        }
+      }
+    }
+  }
+
+  .content-digital {
+    padding-bottom: 90px;
+    .intro-text {
+      min-height: 395px;
+    }
+  }
+  .content {
+    padding-bottom: 125px;
   }
 }
 
@@ -60,10 +124,25 @@
 }
 
 @include to('m') {
-  .header-what-we-do {
-    .text-nowrap {
-      white-space: normal;
+  .header .intro-text .text-nowrap {
+    white-space: normal;
+  }
+  .contact-us-form {
+    .bottom-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .send-form {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
+    textarea {
+      min-height: 145px;
+    }
+  }
+  .header--video-mag {
+    background-size: cover;
   }
 }
 

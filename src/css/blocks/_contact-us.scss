@@ -10,7 +10,7 @@
 
   &::before {
     width: 100%;
-    height: 95%;
+    height: 98%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -30,7 +30,7 @@
   .placeholder-list {
     margin-bottom: 40px;
     li {
-      width: 42%;
+      width: 49%;
       margin-bottom: 7px;
       display: inline-block;
       vertical-align: top;
@@ -51,7 +51,7 @@
       resize: none;
     }
     .left-area {
-      height: 296px;
+      height: 480px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -93,7 +93,6 @@
       }
     }
     .icon-fb {
-      margin: 0 32px;
       width: 43px;
       height: 42px;
       border: 2px solid #bcbdc0;

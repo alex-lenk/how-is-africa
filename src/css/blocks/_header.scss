@@ -15,10 +15,10 @@
   }
 
   &-top {
-    padding-top: 77px;
+    padding-top: 45px;
     padding-bottom: 23px;
     .intro-text {
-      padding-top: 25px;
+      padding-top: 15px;
       font-weight: 700;
       color: #fff;
       font-size: 30px;
@@ -59,8 +59,8 @@
   &-home {
     background: url(../img/example/main-img.jpg) no-repeat center top;
     .header-bottom {
-      padding-top: 48px;
-      padding-bottom: 61px;
+      padding-top: 20px;
+      padding-bottom: 25px;
       background-color: #f69962;
     }
   }
@@ -122,14 +122,14 @@
     background: url(../img/bg-digital.png) repeat-x 0 18% #00a8b3;
     box-shadow: 0 1px 15px 0 rgba(42, 43, 43, 0.4);
     .text {
-      margin-top: 37px;
-      margin-bottom: 74px;
+      margin-top: 30px;
+      margin-bottom: 54px;
+      border-radius: 28px;
+      padding: 14px 20px 4px 29px;
       font-weight: 700;
       font-size: 50px;
       color: #00a9b9;
       background-color: #fff4e4;
-      border-radius: 40px;
-      padding: 25px 26px 34px 29px;
       line-height: 60px;
       position: relative;
       &-allocation {
@@ -138,20 +138,20 @@
       &::before {
         border: 25px solid transparent;
         border-bottom-width: 0;
-        border-top: 26px solid #fff4e4;
         content: '';
         position: absolute;
-        bottom: -26px;
-        left: 100px;
+        border-top: 21px solid #fff4e4;
+        bottom: -21px;
+        left: 70px;
       }
     }
     .header-top {
-      padding-top: 29px;
+      padding-top: 45px;
       padding-bottom: 18px;
     }
     .header-bottom {
-      padding-top: 25px;
-      padding-bottom: 33px;
+      padding-top: 20px;
+      padding-bottom: 25px;
       background-color: #ffffff;
       color: #ffa679;
       letter-spacing: -.3px;
@@ -160,19 +160,19 @@
         box-shadow: 0 -3px 0 0 rgb(0, 168, 179), 0 -5px 0 0 #f69962;
       }
       &-text::after {
+        left: 82px;
         width: 56px;
         height: 18px;
         background: url(../img/arrow-decor.png) no-repeat center;
         border: 0;
-        left: 113px;
         top: -21px;
       }
       &-text::before {
-        left: 109px;
+        left: 78px;
+        top: -31px;
         border: 32px solid transparent;
         border-top-width: 0;
         border-bottom: 32px solid #fff;
-        top: -31px;
       }
     }
   }

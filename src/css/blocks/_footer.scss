@@ -13,6 +13,11 @@ footer {
     &:not(:hover) {
       color: #fcc777;
     }
+    &:hover {
+      color: #ffffff;
+      background-color: #f0a67f;
+      border-color: #f0a67f;
+    }
   }
 }
 
