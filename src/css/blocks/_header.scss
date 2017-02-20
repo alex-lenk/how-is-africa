@@ -3,8 +3,8 @@
   position: relative;
   z-index: 2;
   &-title {
-    padding: 9px 44px;
-    font-size: 16px;
+    padding: 6px 28px 4px;
+    font-size: 10px;
     font-weight: 700;
     color: #fff;
     border: 3px solid transparent;
@@ -15,19 +15,19 @@
   }
 
   &-top {
-    padding-top: 45px;
+    padding-top: 19px;
     padding-bottom: 23px;
     .intro-text {
-      padding-top: 15px;
+      padding-top: 10px;
+      font-size: 25px;
       font-weight: 700;
       color: #fff;
-      font-size: 30px;
       line-height: 1.4;
     }
   }
 
   &-bottom {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.4;
     color: #fff;
     position: relative;

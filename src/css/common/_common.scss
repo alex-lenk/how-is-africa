@@ -12,6 +12,10 @@ html, body {
   transition: all 0.2s ease-in;
 }
 
+body {
+  min-width: 320px;
+}
+
 a {
   color: #ee8467;
   text-decoration: none;
