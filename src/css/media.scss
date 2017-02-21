@@ -11,6 +11,11 @@
     font-size: 54px;
   }
 
+  .header-title {
+    padding: 10px 45px 9px;
+    font-size: 16px;
+  }
+
   .header-bottom {
     font-size: 24px;
     line-height: 30px;
@@ -33,6 +38,39 @@
 
   .content-home {
     padding-bottom: 75px;
+  }
+
+  .sidebar-contribute {
+    height: 400px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .blog-filter {
+    height: 50px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    .point {
+      width: calc(100% / 4 - 20px);
+    }
+  }
+  .blog-post-meta {
+    display: flex;
+    align-items: center;
+  }
+
+  .blog-inner {
+    blockquote {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  .related-posts .item {
+    width: 121px;
   }
 }
 
@@ -107,10 +145,6 @@
   }
 
   .content-digital {
-    padding-bottom: 90px;
-    .intro-text {
-      min-height: 395px;
-    }
   }
   .content {
     padding-bottom: 125px;
@@ -196,6 +230,14 @@
     text-align: left;
   }
 
+  .header-bottom {
+    font-size: 16px;
+  }
+
+  .header--video-mag .header-bottom .stay {
+    font-size: 23px;
+  }
+
   .big-title {
     margin-bottom: 21px;
     font-size: 36px;
@@ -249,6 +291,160 @@
       letter-spacing: 1px;
     }
   }
+
+  .blog {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+    &-filter {
+      padding: 0 8px;
+      order: 1;
+      font-size: 0;
+      .point {
+        width: calc(100% / 2 - 16px);
+        margin: 0 8px 16px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    .col-md-9 {
+      order: 2;
+    }
+    .jq-selectbox__select {
+      font-size: 14px;
+      height: 40px;
+      line-height: 42px;
+    }
+    .jq-selectbox__trigger-arrow {
+      top: 14px;
+      right: 10px;
+      border-top: 12px solid #dd6b4f;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+    }
+  }
+
+  .search-block {
+    .form-control {
+      height: 41px;
+      padding-left: 39px;
+      padding-right: 5px;
+      font-size: 12px;
+    }
+    .button-search::before {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .blog-post-info {
+    padding: 10px 0 0 48px;
+  }
+
+  .blog-post-meta .author {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
+  }
+
+  .pagination a, .pagination .current {
+    padding: 10px 8px;
+  }
+
+  .sidebar-contribute .btn {
+    display: block;
+    max-width: 210px;
+    margin: 0 auto;
+  }
+
+  .btn-rectangle {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .header--digital-storytelling {
+    .header-top {
+      padding-top: 19px;
+    }
+    .text {
+      padding: 15px 10px 11px 10px;
+      margin-bottom: 11px;
+      font-size: 21px;
+      line-height: 26px;
+      margin-top: 9px;
+      border-radius: 10px;
+      &::before {
+        border: 8px solid transparent;
+        border-top: 8px solid #fff4e4;
+        bottom: -8px;
+        left: 30px;
+      }
+    }
+    .header-bottom-text::before {
+      left: 39px;
+      top: -16px;
+      border: 14px solid transparent;
+      border-top-width: 0;
+      border-bottom: 16px solid #fff;
+    }
+    .header-bottom-text::after {
+      left: 40px;
+      width: 26px;
+      height: 10px;
+      background-size: contain;
+      top: -13px;
+    }
+  }
+  .content-digital {
+    .container-fluid {
+      padding-top: 125px;
+      background: url(../img/example/ex-img.jpg) no-repeat center top;
+      background-size: cover;
+    }
+    .intro-text {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .info-title {
+      font-size: 13px;
+    }
+    .content-digital-list li::before {
+      width: 81px;
+      background-size: contain;
+    }
+  }
+
+  .contact-us .placeholder-list li {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .contact-us-form {
+    padding: 15px 0;
+  }
+  .contact-us-form .left-area {
+    height: auto;
+  }
+  .contact-us-form .bottom-block .send-form {
+    width: 48%;
+    margin-bottom: 0;
+  }
+  .contact-us-form {
+    .form-group:last-of-type {
+      margin-bottom: 0;
+    }
+    .bottom-block {
+      align-items: flex-end;
+    }
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+  .form-control {
+    padding: 11px 11px;
+  }
+
 }
 
 @include to('xs') {
@@ -256,6 +452,10 @@
     .first {
       font-size: 11px;
     }
+  }
+
+  .blog-post-media {
+    margin: 0 -15px 15px;
   }
 }
 
@@ -279,5 +479,8 @@
     &-bottom {
       font-size: 20px;
     }
+  }
+  .content-digital-list li {
+    width: calc(100% / 3);
   }
 }

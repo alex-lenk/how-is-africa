@@ -1,9 +1,6 @@
 .sidebar {
   &-contribute {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    margin-bottom: 25px;
     .title {
       font-weight: 700;
       text-transform: uppercase;

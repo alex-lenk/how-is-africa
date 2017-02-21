@@ -98,11 +98,14 @@
 
   /* .content-digital */
   &-digital {
-    padding-top: 125px;
-    background: url(../img/example/ex-img.jpg) no-repeat center top;
+    .container-fluid {
+      padding-top: 125px;
+      background: url(../img/example/ex-img.jpg) no-repeat center top;
+    }
     .intro-text {
       max-width: 500px;
       width: 100%;
+      padding-bottom: 30px;
       font-size: 30px;
       color: #fff;
       font-weight: 300;
@@ -131,7 +134,7 @@
       flex-wrap: wrap;
       justify-content: center;
       li {
-        width: calc(100% / 3);
+        width: calc(100% / 2);
         margin-bottom: 75px;
         &::before {
           min-height: 115px;

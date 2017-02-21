@@ -1,15 +1,7 @@
 .blog {
   padding-top: 35px;
   padding-bottom: 70px;
-  &-filter {
-    height: 50px;
-    margin-bottom: 35px;
-    display: flex;
-    justify-content: space-between;
-    > div {
-      width: calc(100% / 4 - 20px);
-    }
-  }
+
   &-post {
     border-bottom: 1px solid #f0f1f1;
     &:not(:last-of-type) {
@@ -32,12 +24,11 @@
         color: inherit;
       }
     }
+
     &-meta {
       margin-bottom: 30px;
       font-size: 13px;
       color: #676767;
-      display: flex;
-      align-items: center;
       .author {
         padding-right: 20px;
         margin-right: 13px;
@@ -87,6 +78,10 @@
       font-size: 12px;
     }
   }
+
+  .sidebar {
+    float: right;
+  }
 }
 
 .search-block {
@@ -128,4 +123,3 @@
     }
   }
 }
-
