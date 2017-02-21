@@ -2,7 +2,5 @@
 .idea
 vcs.xml
 bower_components
-build
 node_modules
 sources
-
