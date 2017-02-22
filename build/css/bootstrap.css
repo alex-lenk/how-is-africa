@@ -1653,7 +1653,6 @@ output {
 }
 
 .slick-slider img {
-  margin: 0 auto;
   border: 2px solid #f2f2f2;
 }
 
@@ -1677,11 +1676,11 @@ output {
 }
 
 .slick-slider .slick-prev {
-  left: 0;
+  left: -15px;
 }
 
 .slick-slider .slick-next {
-  right: 0;
+  right: -15px;
 }
 
 .slick-list {

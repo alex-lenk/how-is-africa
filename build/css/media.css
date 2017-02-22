@@ -78,15 +78,15 @@
   .related-posts .item {
     width: 121px;
   }
+  .contact-us-form .send-form {
+    padding: 12px 10px 10px 20px;
+  }
 }
 
 @media (min-width: 961px) {
   .top-panel {
     padding-top: 13px;
     padding-bottom: 13px;
-  }
-  .navbar {
-    padding-top: 55px;
   }
   .navbar-menu {
     font-size: 12px;
@@ -109,9 +109,6 @@
   }
   .contact-us-form .left-area {
     height: 296px;
-  }
-  .contact-us-form .icon-fb {
-    margin: 0 32px;
   }
   .placeholder-list li {
     width: 42%;
@@ -159,12 +156,6 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
   .contact-us-form .bottom-block .send-form {
     width: 100%;
@@ -180,7 +171,6 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding-top: 14px;
     position: static;
   }
   .navbar-toggle {
@@ -430,6 +420,9 @@
   .form-control {
     padding: 11px 11px;
   }
+  .other-posts {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -438,6 +431,16 @@
   }
   .blog-post-media {
     margin: 0 -15px 15px;
+  }
+  .related-posts-carousel {
+    padding: 0 10px;
+  }
+  .related-posts-carousel .title {
+    max-width: 122px;
+    display: block;
+  }
+  .contacts-social li {
+    margin: 0 10px;
   }
 }
 
@@ -462,6 +465,14 @@
   }
   .content-digital-list li {
     width: calc(100% / 3);
+  }
+  .contact-us-form .bottom-block {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 

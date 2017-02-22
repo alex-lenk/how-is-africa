@@ -45,7 +45,7 @@
     color: #fff;
   }
   &-form {
-    padding: 50px 35px;
+    padding: 50px 30px;
     background-color: #fff;
     textarea {
       resize: none;
@@ -57,7 +57,7 @@
       justify-content: space-between;
     }
     .send-form {
-      padding: 12px 10px 10px 20px;
+      padding: 12px 10px 10px 10px;
       background-color: #ff7a6e;
       text-transform: uppercase;
       color: #fff;
@@ -75,44 +75,53 @@
         opacity: .8;
       }
     }
-    .icon-fb, .icon-ig {
-      width: 43px;
-      height: 42px;
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: bottom;
-      position: relative;
-      &::before {
-        content: '';
-        width: 45px;
-        height: 45px;
-        position: absolute;
-      }
-      &:hover {
-        opacity: .8;
-      }
+  }
+}
+.contacts-social {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 0;
+  li {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 12px;
+  }
+  .icon-fb, .icon-ig {
+    width: 43px;
+    height: 42px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: '';
+      width: 45px;
+      height: 45px;
+      position: absolute;
     }
-    .icon-fb {
-      width: 43px;
-      height: 42px;
-      border: 2px solid #bcbdc0;
-      border-radius: 10px;
-      &::before {
-        width: 65px;
-        height: 65px;
-        top: -21px;
-        left: -8px;
-        background: url(../img/icons/facebook.svg) no-repeat center;
-      }
+    &:hover {
+      opacity: .8;
     }
-    .icon-ig {
-      &::before {
-        width: 87px;
-        height: 49px;
-        top: -4px;
-        left: -22px;
-        background: url(../img/icons/instagramm.svg) no-repeat center / contain;
-      }
+  }
+  .icon-fb {
+    width: 43px;
+    height: 42px;
+    border: 2px solid #bcbdc0;
+    border-radius: 10px;
+    &::before {
+      width: 65px;
+      height: 65px;
+      top: -21px;
+      left: -8px;
+      background: url(../img/icons/facebook.svg) no-repeat center;
+    }
+  }
+  .icon-ig {
+    &::before {
+      width: 87px;
+      height: 49px;
+      top: -4px;
+      left: -22px;
+      background: url(../img/icons/instagramm.svg) no-repeat center / contain;
     }
   }
 }

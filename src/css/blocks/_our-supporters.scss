@@ -1,0 +1,46 @@
+.our-supporters {
+  padding-bottom: 200px;
+  background-color: #707173;
+  .big-title {
+    margin: 0;
+    padding: 80px 0 33px;
+    color: #ff8069;
+    &::after {
+      background-color: #ff8069;
+    }
+  }
+  &-intro {
+    margin-bottom: 70px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  &-map {
+    padding-top: 450px;
+    position: relative;
+    min-height: 737px;
+    &::after {
+      width: 812px;
+      height: 737px;
+      background: url(../img/africa-map.png) no-repeat center / contain;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -142px;
+    }
+  }
+  &-list {
+    width: 540px;
+    color: #ffffff;
+    a:not(:hover) {
+      color: #ff7a6e;
+    }
+    li {
+      line-height: 29px;
+      font-size: 16px;
+    }
+  }
+}
+
+
