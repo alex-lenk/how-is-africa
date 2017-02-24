@@ -75,6 +75,10 @@
   .contact-us-form .send-form {
     padding: 12px 10px 10px 20px;
   }
+  .our-supporters-intro {
+    font-size: 26px;
+    margin-bottom: 70px;
+  }
 }
 
 @include from('l') {
@@ -146,6 +150,10 @@
   .content {
     padding-bottom: 125px;
   }
+
+  .our-supporters-list {
+    width: 540px;
+  }
 }
 
 @include between('s', 'm') {
@@ -172,6 +180,19 @@
   }
   .header--video-mag {
     background-size: cover;
+  }
+
+  .our-supporters-map {
+    padding-top: 0;
+    min-height: 1px;
+  }
+  .our-supporters-map::before {
+    width: 100%;
+    height: 630px;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
   }
 }
 
@@ -234,7 +255,7 @@
 
   .big-title {
     margin-bottom: 21px;
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .content-home {
@@ -464,6 +485,24 @@
   .contacts-social li {
     margin: 0 10px;
   }
+  .header--who-we-are .header-top {
+    padding-top: 45px;
+  }
+  .header--who-we-are-text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .our-supporters {
+    padding-bottom: 50px;
+  }
+  .our-supporters-list li {
+    line-height: 29px;
+    font-size: 9px;
+  }
+  .our-supporters-map::before {
+    height: 450px;
+  }
 }
 
 @include at('m') {
@@ -491,10 +530,310 @@
     width: calc(100% / 3);
   }
 
-  .contact-us-form {
-    .bottom-block {
-      flex-wrap: wrap;
-      justify-content: center;
+  .contact-us-form .bottom-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.our-team {
+  @include from('l') {
+    padding-bottom: 0;
+
+    li {
+      flex-basis: 232.5px;
+      height: 212.5px;
     }
+
+    .founder {
+      flex-basis: 465px;
+    }
+
+    .cinematographer {
+      .text::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        background-color: #d5d7d8;
+      }
+    }
+
+    .education {
+      flex-basis: 465px;
+      &::after, &::before {
+        left: 21%;
+      }
+    }
+
+    .manager {
+      max-width: 232.5px;
+    }
+
+    .partnerships {
+      flex-basis: 465px;
+    }
+    .first {
+      flex-basis: 465px;
+      margin-left: -232.5px;
+    }
+  }
+
+  @include between('s', 'm') {
+    .col-md-12 {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+
+  @include at('m') {
+    .col-md-12 {
+      width: 750px;
+    }
+    li {
+      order: 13;
+      flex-basis: 240px;
+      height: 219.4px;
+    }
+
+    .education {
+      &::before {
+        right: -13px;
+        border: 14px solid transparent;
+        border-left: 13px solid #ffffff;
+        border-right-width: 0;
+        top: 43%;
+        bottom: auto;
+        left: auto;
+      }
+      &::after {
+        border: 14px solid transparent;
+        border-left: 13px solid #868889;
+        border-right-width: 0;
+        top: 43%;
+        right: -9px;
+        bottom: auto;
+        left: auto;
+      }
+    }
+
+    .first {
+      order: 1;
+      margin-left: -240px;
+      flex-basis: 480px;
+    }
+    .founder {
+      order: 2;
+      flex-basis: 480px;
+    }
+    .third {
+      order: 5;
+    }
+    .fourth {
+    }
+    .film-editor {
+      order: 3;
+    }
+    .sixth {
+      order: 4;
+    }
+    .cinematographer {
+      order: 8;
+    }
+    .education {
+      order: 9;
+      flex-basis: 480px;
+    }
+    .ninth {
+      order: 6;
+    }
+    .manager {
+      order: 7;
+    }
+    .partnerships {
+      flex-basis: 480px;
+    }
+  }
+
+  @include at('s') {
+    .col-md-12 {
+      width: 551px;
+    }
+    li {
+      order: 13;
+      &:not(.first):not(.founder) {
+        flex-basis: 260.5px;
+      }
+    }
+    .photo {
+      outline-offset: -1px;
+      height: 238px;
+    }
+    .first {
+      flex-basis: 521px;
+      order: 1;
+      height: auto;
+    }
+    .founder {
+      flex-basis: 521px;
+      order: 2;
+      &::before {
+        border: 14px solid transparent;
+        border-top-width: 0;
+        left: 42%;
+        border-bottom: 13px solid #ffffff;
+        top: -13px;
+      }
+      &::after {
+        border: 14px solid transparent;
+        border-top-width: 0;
+        left: 42%;
+        border-bottom: 13px solid #ff7a6e;
+        top: -9px;
+      }
+    }
+    .film-editor {
+      order: 3;
+    }
+    .sixth {
+      order: 4;
+    }
+    .third {
+      order: 5;
+    }
+    .cinematographer {
+      order: 6;
+      &::before {
+        border: 14px solid transparent;
+        border-left-width: 0;
+        top: 42%;
+        border-right: 13px solid #ffffff;
+        left: -13px;
+      }
+      &::after {
+        border: 14px solid transparent;
+        border-left-width: 0;
+        top: 42%;
+        border-right: 13px solid #d5d7d8;
+        left: -9px;
+      }
+    }
+    .ninth {
+      order: 7;
+    }
+    .manager {
+      order: 8;
+    }
+    .education {
+      order: 9;
+      height: 281px;
+      &::before {
+        border: 14px solid transparent;
+        border-right-width: 0;
+        top: 42%;
+        border-left: 13px solid #ffffff;
+        right: -13px;
+        left: auto;
+      }
+      &::after {
+        right: -9px;
+        border: 14px solid transparent;
+        border-right-width: 0;
+        top: 42%;
+        border-left: 13px solid #868889;
+        left: auto;
+      }
+    }
+    .fourth {
+      order: 10;
+    }
+    .partnerships {
+      max-width: 521px;
+      height: auto;
+      top: -43px;
+      position: relative;
+      .text-nowrap {
+        white-space: normal;
+      }
+    }
+  }
+
+  @include to('xs') {
+    li {
+      max-width: 462px;
+      order: 13;
+    }
+    .text-block {
+      &::before, &::after {
+        border: 14px solid transparent;
+        border-top-width: 0;
+        left: 42%;
+        right: auto;
+      }
+      &::before {
+        border-bottom: 13px solid #ffffff;
+        top: -13px;
+      }
+      &::after {
+        top: -9px;
+        border-bottom: 13px solid #d5d7d8;
+      }
+    }
+
+    .first {
+      order: 1;
+    }
+    .founder {
+      order: 2;
+      &::after {
+        border-bottom-color: #ff7a6e;
+      }
+    }
+    .sixth {
+      order: 3;
+    }
+    .film-editor {
+      order: 4;
+      &::after {
+        border-bottom-color: #ffccc9;
+      }
+    }
+    .third {
+      order: 5;
+    }
+    .cinematographer {
+      order: 6;
+    }
+    .ninth {
+      order: 7;
+    }
+    .manager {
+      order: 8;
+      &::after {
+        border-bottom-color: #ffaca5;
+      }
+    }
+    .fourth {
+      order: 9;
+    }
+    .education {
+      order: 10;
+      &::after {
+        border-bottom-color: #868889;
+      }
+    }
+    .partnerships {
+      .text-nowrap {
+        white-space: normal;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .our-supporters-map::before {
+    height: 245px;
   }
 }

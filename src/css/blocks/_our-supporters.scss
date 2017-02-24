@@ -10,17 +10,17 @@
     }
   }
   &-intro {
-    margin-bottom: 70px;
-    font-size: 26px;
+    margin-bottom: 30px;
     color: #ffffff;
     font-weight: 300;
+    font-size: 16px;
     line-height: 1.1;
   }
   &-map {
     padding-top: 450px;
     position: relative;
     min-height: 737px;
-    &::after {
+    &::before {
       width: 812px;
       height: 737px;
       background: url(../img/africa-map.png) no-repeat center / contain;
@@ -31,7 +31,6 @@
     }
   }
   &-list {
-    width: 540px;
     color: #ffffff;
     a:not(:hover) {
       color: #ff7a6e;

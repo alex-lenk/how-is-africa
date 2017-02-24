@@ -2030,10 +2030,10 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-supporters-intro {
-  margin-bottom: 70px;
-  font-size: 26px;
+  margin-bottom: 30px;
   color: #ffffff;
   font-weight: 300;
+  font-size: 16px;
   line-height: 1.1;
 }
 
@@ -2043,7 +2043,7 @@ input[type='submit'].styler[disabled] {
   min-height: 737px;
 }
 
-.our-supporters-map::after {
+.our-supporters-map::before {
   width: 812px;
   height: 737px;
   background: url(../img/africa-map.png) no-repeat center/contain;
@@ -2054,7 +2054,6 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-supporters-list {
-  width: 540px;
   color: #ffffff;
 }
 
@@ -2068,6 +2067,10 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-team {
+  padding-bottom: 0;
+}
+
+.our-team-list {
   width: 100%;
   font-size: 0;
   display: -webkit-flex;
@@ -2079,8 +2082,6 @@ input[type='submit'].styler[disabled] {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  /*  outline: 1px solid #333;
-    outline-offset: -1px;*/
 }
 
 .our-team img {
@@ -2110,14 +2111,12 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-team .text-block {
-  height: 211px;
   padding: 15px 10px 15px 15px;
   font-size: 11.5px;
   font-weight: 300;
 }
 
 .our-team .photo {
-  height: 211px;
   z-index: 3;
 }
 
@@ -2134,7 +2133,7 @@ input[type='submit'].styler[disabled] {
 .our-team .arrow-top::before, .our-team .arrow-top::after {
   border: 14px solid transparent;
   border-top-width: 0;
-  left: 22%;
+  left: 42%;
 }
 
 .our-team .arrow-top::before {
@@ -2149,7 +2148,7 @@ input[type='submit'].styler[disabled] {
 .our-team .arrow-right::before, .our-team .arrow-right::after {
   border: 14px solid transparent;
   border-right-width: 0;
-  top: 22%;
+  top: 42%;
 }
 
 .our-team .arrow-right::before {
@@ -2164,7 +2163,7 @@ input[type='submit'].styler[disabled] {
 .our-team .arrow-left::before, .our-team .arrow-left::after {
   border: 14px solid transparent;
   border-left-width: 0;
-  top: 22%;
+  top: 42%;
 }
 
 .our-team .arrow-left::before {
@@ -2177,7 +2176,6 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-team .founder {
-  max-width: 465px;
   background-color: #ff7a6e;
 }
 
@@ -2186,7 +2184,6 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-team .film-editor {
-  max-width: 232px;
   background-color: #ffccc9;
 }
 
@@ -2195,7 +2192,6 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-team .cinematographer {
-  max-width: 232px;
   background-color: #d5d7d8;
 }
 
@@ -2203,18 +2199,7 @@ input[type='submit'].styler[disabled] {
   border-bottom: 13px solid #d5d7d8;
 }
 
-.our-team .cinematographer .text::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: -100%;
-  top: 0;
-  background-color: #d5d7d8;
-}
-
 .our-team .education {
-  max-width: 464px;
   background-color: #868889;
 }
 
@@ -2222,8 +2207,11 @@ input[type='submit'].styler[disabled] {
   border-bottom: 13px solid #868889;
 }
 
+.our-team .first {
+  text-align: right;
+}
+
 .our-team .manager {
-  max-width: 232px;
   background-color: #ffaca5;
 }
 
@@ -2232,7 +2220,6 @@ input[type='submit'].styler[disabled] {
 }
 
 .our-team .partnerships {
-  max-width: 465px;
   background-color: #d5d7d8;
 }
 
