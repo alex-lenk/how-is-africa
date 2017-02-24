@@ -442,6 +442,9 @@
   .other-posts {
     margin-bottom: 30px;
   }
+  .content-home-list .eighth {
+    height: 210px !important;
+  }
 }
 
 @media (max-width: 540px) {

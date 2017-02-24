@@ -462,6 +462,10 @@
   .other-posts {
     margin-bottom: 30px;
   }
+
+  .content-home-list .eighth {
+    height: 210px !important;
+  }
 }
 
 @include to('xs') {
