@@ -37,6 +37,11 @@
         align-items: center;
         &-avatar {
           margin-right: 10px;
+          img {
+            width: 39px;
+            height: auto;
+            border-radius: 50%;
+          }
         }
         &-info {
           display: flex;

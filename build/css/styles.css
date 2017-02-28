@@ -293,7 +293,7 @@ button:focus, button:active {
   background-color: #fff9f2;
   font-weight: 400;
   position: relative;
-  z-index: 5;
+  z-index: 107;
   box-shadow: 0 1px 15px 0 rgba(42, 43, 43, 0.4);
 }
 
@@ -758,7 +758,7 @@ button:focus, button:active {
 .content-digital-list .wrap {
   width: 153px;
   margin: auto;
-  padding: 50px 0 0;
+  padding: 25px 0 0;
   color: #636365;
 }
 
@@ -1095,6 +1095,12 @@ footer {
 
 .blog-post-meta .author-avatar {
   margin-right: 10px;
+}
+
+.blog-post-meta .author-avatar img {
+  width: 39px;
+  height: auto;
+  border-radius: 50%;
 }
 
 .blog-post-meta .author-info {
@@ -1878,6 +1884,12 @@ input[type='submit'].styler[disabled] {
 
 .sidebar-author .author-avatar {
   margin-right: 10px;
+}
+
+.sidebar-author .author-avatar img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
 }
 
 .sidebar-author .author-info {
