@@ -57,11 +57,29 @@
       justify-content: space-between;
     }
     .send-form {
+      width: 125px;
+      height: 57px;
       padding: 12px 10px 10px 10px;
       background-color: #ff7a6e;
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 700;
+      display: inline-block;
+      vertical-align: bottom;
+      position: relative;
+      text-align: right;
+      input {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        background-color: transparent;
+        border: 0;
+        font-size: 14px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0 0 0 20px;
+        text-align: left;
+      }
       &::after {
         width: 37px;
         height: 35px;
