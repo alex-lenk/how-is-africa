@@ -7,9 +7,7 @@ $(document).ready(function () {
 
     (function ($) {
         $(function () {
-
             $('.blog-filter-select').styler();
-
         });
     })(jQuery);
 
@@ -29,14 +27,16 @@ $(document).ready(function () {
             }
         ]
     });
-
-    $('#myAffix').affix({
-        offset: {
-            top: 100,
-            bottom: function () {
-                return (this.bottom = $('.footer').outerHeight(true))
-            }
-        }
-    })
-
 });
+
+(function($) {
+    $(function() {
+
+        $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
+    });
+})(jQuery);

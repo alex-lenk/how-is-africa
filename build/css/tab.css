@@ -1,0 +1,146 @@
+.tabs__caption {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+}
+
+.tabs__caption:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.tabs__caption li {
+  color: #FFF;
+  position: relative;
+  text-align: center;
+}
+
+.tabs__caption li:not(.active) {
+  cursor: pointer;
+}
+
+.tabs__caption li:not(.active):hover {
+  color: #503e34;
+}
+
+.tabs__caption .active {
+  color: #503e34;
+}
+
+.tabs__content {
+  display: none;
+  background: #FFF;
+  padding: 15px 0 0;
+}
+
+.tabs__content.active {
+  display: block;
+}
+
+.video-mag {
+  margin-bottom: 70px;
+}
+
+.video-mag .tabs__content:not(:last-of-type) {
+  background-color: #ffa679;
+}
+
+.video-mag .tabs__content:first-of-type {
+  background-color: #ffc872;
+}
+
+.video-mag .tabs__content:last-of-type {
+  background-color: #eca566;
+}
+
+.video-mag-control li {
+  padding: 33px 67px 10px 13px;
+  font-size: 16px;
+  background-color: #ffa679;
+}
+
+.video-mag-control li:first-child {
+  background-color: #ffc872;
+}
+
+.video-mag-control li:last-child {
+  background-color: #eca566;
+}
+
+.video-mag-list {
+  font-size: 0;
+}
+
+.video-mag-list li {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video-mag-list li a {
+  display: block;
+  position: relative;
+}
+
+.video-mag-list li a:hover:before {
+  opacity: .8;
+}
+
+.video-mag-list li a:before {
+  width: 65px;
+  height: 65px;
+  content: '';
+  background: url(../img/icons/play.svg) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -34px 0 0 -33px;
+}
+
+.video-mag-title {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #503e34;
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .video-mag-list li {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+  .video-mag-list li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs__content {
+    text-align: center;
+  }
+  .video-mag-list li {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .video-mag-control li {
+    padding: 33px 10px 10px 10px;
+    font-size: 14px;
+    width: calc(100% / 3);
+  }
+}
+
+/*# sourceMappingURL=../maps/tab.css.map */
